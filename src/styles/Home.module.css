@@ -76,8 +76,9 @@
   min-width: 300px;
   border: none;
   transition: .3s all ease;
-  padding: 4px 30px 4px 15px;
-  font-size: 16px;
+  padding: 0.4rem 3.0rem 0.4rem 1.5rem;
+  font-size: 1.6rem;
+  font-family: "Montserrat";
   line-height: inherit;
   margin: 0;
   overflow: visible;
@@ -100,4 +101,104 @@
   min-height: 0.1rem;
   max-width: 100%;
   padding: 0 1.5rem 0 1.5rem;
+}
+.site_logo>a{
+  color: #000;
+  font-weight: 500;
+  font-size: 9rem;
+  font-family: "Montserrat";
+  transition: .3s all ease;
+  text-decoration: none;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.navbar{
+  position: relative;
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar>.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.1rem solid #e6e6e6;
+
+}
+.navbar_content{
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.content_list{
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+}
+.nav_item,.nav_item_dropdown{
+  display: block;
+  padding: 1.7rem 1rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.nav_item>a,.nav_item_dropdown>a{
+  transition: .3s all ease;
+  text-decoration: none;
+  background-color: transparent;
+  color: #000;
+  font-weight: 500;
+
+}
+.dropdown_menu{
+  /* position: absolute; */
+  font-size: 14px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
+  min-width: 13em;
+  margin-top: -10px;
+  float: none;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+}
+.dropdown_menu_item{
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.dropdown_menu>a{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-decoration: none;
 }

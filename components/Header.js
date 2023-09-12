@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import {
@@ -44,10 +44,7 @@ const Header = () => {
                       <FaSearch />
                     </i>
                   </span>
-                  <input
-                      type="text"
-                      placeholder="Type keyword to search..."
-                    />
+                  <input type="text" placeholder="Type keyword to search..." />
                 </form>
               </div>
             </div>
@@ -59,7 +56,7 @@ const Header = () => {
           <div className={styles.logo_text_centre}>
             <Link href="/"></Link>
             <h1 className={styles.site_logo}>
-              <Link href="/">Gurusharan Mahato</Link>
+              <Link href="/">Gurusharan</Link>
             </h1>
           </div>
         </div>
@@ -74,26 +71,26 @@ const Header = () => {
               <li className={styles.nav_item_dropdown}>
                 <Link href="/">Travel</Link>
                 <div className={styles.dropdown_menu}>
-                  <Link href="/">Home</Link>
-                  <Link href="/">Home</Link>
-                  <Link href="/">Home</Link>
-                  <Link href="/">Home</Link>
+                  <Link href="/" className={styles.dropdown_menu_item}>Asia</Link>
+                  <Link href="/" className={styles.dropdown_menu_item}>Europe</Link>
+                  <Link href="/" className={styles.dropdown_menu_item}>America</Link>
+                  <Link href="/" className={styles.dropdown_menu_item}>Africa</Link>
                 </div>
               </li>
               <li className={styles.nav_item_dropdown}>
-                <Link href="/">Travel</Link>
+                <Link href="/">Categories</Link>
                 <div className={styles.dropdown_menu}>
-                  <Link href="/">Home</Link>
-                  <Link href="/">Home</Link>
-                  <Link href="/">Home</Link>
-                  <Link href="/">Home</Link>
+                  <Link href="/" className={styles.dropdown_menu_item}>Lifestyle</Link>
+                  <Link href="/" className={styles.dropdown_menu_item}>Travel</Link>
+                  <Link href="/" className={styles.dropdown_menu_item}>Food</Link>
+                  <Link href="/" className={styles.dropdown_menu_item}>Adventure</Link>
                 </div>
               </li>
               <li className={styles.nav_item}>
-                <Link href="/">Home</Link>
+                <Link href="/">About</Link>
               </li>
               <li className={styles.nav_item}>
-                <Link href="/">Home</Link>
+                <Link href="/">Contact</Link>
               </li>
             </ul>
           </div>
