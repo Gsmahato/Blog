@@ -7,7 +7,13 @@ import {
   FaLinkedinIn,
   FaSearch,
 } from "react-icons/fa";
+import { navItems, subNavItem, subCategory } from "./NavItems";
 const Header = () => {
+  const [openSubItem, setOPenSubItem] = useState(false);
+
+  const toggleSubItem = () => {
+    setOPenSubItem(!openSubItem);
+  };
   return (
     <>
       <div className={styles.header}>
@@ -61,41 +67,61 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={styles.navbar}>
+      <nav className={styles.navbar}>
         <div className={styles.container}>
           <div className={styles.navbar_content}>
             <ul className={styles.content_list}>
-              <li className={styles.nav_item}>
-                <Link href="/">Home</Link>
-              </li>
-              <li className={styles.nav_item_dropdown}>
-                <Link href="/">Travel</Link>
-                <div className={styles.dropdown_menu}>
-                  <Link href="/" className={styles.dropdown_menu_item}>Asia</Link>
-                  <Link href="/" className={styles.dropdown_menu_item}>Europe</Link>
-                  <Link href="/" className={styles.dropdown_menu_item}>America</Link>
-                  <Link href="/" className={styles.dropdown_menu_item}>Africa</Link>
-                </div>
-              </li>
-              <li className={styles.nav_item_dropdown}>
-                <Link href="/">Categories</Link>
-                <div className={styles.dropdown_menu}>
-                  <Link href="/" className={styles.dropdown_menu_item}>Lifestyle</Link>
-                  <Link href="/" className={styles.dropdown_menu_item}>Travel</Link>
-                  <Link href="/" className={styles.dropdown_menu_item}>Food</Link>
-                  <Link href="/" className={styles.dropdown_menu_item}>Adventure</Link>
-                </div>
-              </li>
-              <li className={styles.nav_item}>
-                <Link href="/">About</Link>
-              </li>
-              <li className={styles.nav_item}>
-                <Link href="/">Contact</Link>
-              </li>
+              {navItems.map((item) => {
+                return (
+                  <li key={item.id} className={styles.nav_item}>
+                    {item.title === "Travel" || item.title === "Categories" ? (
+                      <Link
+                        href={item.path}
+                        onMouseEnter={toggleSubItem}
+                        onMouseLeave={toggleSubItem}
+                      >
+                        {item.title}
+                      </Link>
+                    ) : (
+                      <Link href={item.path}>{item.title}</Link>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
+          {openSubItem && (
+            <div className={styles.dropdown_menu}>
+              {subNavItem.map((subitem) => {
+                return (
+                  <Link
+                    href={subitem.path}
+                    key={subitem.title}
+                    className={styles.dropdown_menu_item}
+                  >
+                    {subitem.title}
+                  </Link>
+                );
+              })}
+            </div>
+          )}
+          {openSubItem && (
+            <div className={styles.dropdown_menu1}>
+              {subCategory.map((subCat) => {
+                return (
+                  <Link
+                    href={subCat.path}
+                    key={subCat.id}
+                    className={styles.dropdown_menu_item}
+                  >
+                    {subCat.title}
+                  </Link>
+                );
+              })}
+            </div>
+          )}
         </div>
-      </div>
+      </nav>
     </>
   );
 };
