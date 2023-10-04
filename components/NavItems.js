@@ -39,27 +39,27 @@ export const subNavItem =[
     cName: "sub-item"
   },
   {
-    id:1,
+    id:2,
     title: "Asia",
     path: "/",
     cName: "sub-item"
   },
   {
-    id:1,
+    id:3,
+    title: "Asia",
+    path: "/asia",
+    cName: "sub-item"
+  },
+  {
+    id:4,
     title: "Asia",
     path: "/",
     cName: "sub-item"
   },
   {
-    id:1,
+    id:5,
     title: "Asia",
-    path: "/",
-    cName: "sub-item"
-  },
-  {
-    id:1,
-    title: "Asia",
-    path: "/",
+    path: "/asia",
     cName: "sub-item"
   },
 ]
@@ -69,30 +69,57 @@ export const subCategory =[
     id:1,
     title: "Asia",
     path: "/",
-    cName: "sub-item"
+    cName: "sub-category"
   },
   {
-    id:1,
+    id:2,
     title: "Asia",
     path: "/",
-    cName: "sub-item"
+    cName: "sub-category"
   },
   {
-    id:1,
+    id:3,
     title: "Asia",
-    path: "/",
-    cName: "sub-item"
+    path: "/asia",
+    cName: "sub-category"
   },
   {
-    id:1,
+    id:4,
     title: "Asia",
     path: "/",
-    cName: "sub-item"
+    cName: "sub-category"
   },
   {
-    id:1,
+    id:5,
     title: "Asia",
     path: "/",
-    cName: "sub-item"
+    cName: "sub-category"
+  },
+]
+export const SliderData=[
+  {
+    id:1,
+    image: "/ganesha.jpeg",
+    title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores animi velit delectus iure. Qui at vitae tempore consectetur perspiciatis provident voluptas hic? Nemo inventore, sed ipsa in aspernatur reprehenderit?"
+  },
+  {
+    id:2,
+    image: "/image2.jpg",
+    title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores animi velit delectus iure. Qui at vitae tempore consectetur perspiciatis provident voluptas hic? Nemo inventore, sed ipsa in aspernatur reprehenderit?"
+  },
+  {
+    id:3,
+    image: "/image3.jpg",
+    title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores animi velit delectus iure. Qui at vitae tempore consectetur perspiciatis provident voluptas hic? Nemo inventore, sed ipsa in aspernatur reprehenderit?"
+  },
+  {
+    id:4,
+    image: "/image4.jpg",
+    title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores animi velit delectus iure. Qui at vitae tempore consectetur perspiciatis provident voluptas hic? Nemo inventore, sed ipsa in aspernatur reprehenderit?"
+  },
+  {
+    id:5,
+    image: "/image5.png",
+    title: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores animi velit delectus iure. Qui at vitae tempore consectetur perspiciatis provident voluptas hic? Nemo inventore, sed ipsa in aspernatur reprehenderit?"
   },
 ]

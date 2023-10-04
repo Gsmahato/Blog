@@ -7,7 +7,6 @@ import SliderSection from '../../components/SliderSection'
 import CardSection from '../../components/CardSection'
 import LifeStyleCategories from '../../components/LifeStyleCategories'
 import MoreBlog from '../../components/MoreBlog'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

@@ -9,11 +9,8 @@ import {
 } from "react-icons/fa";
 import { navItems, subNavItem, subCategory } from "./NavItems";
 const Header = () => {
-  const [openSubItem, setOPenSubItem] = useState(false);
-
-  const toggleSubItem = () => {
-    setOPenSubItem(!openSubItem);
-  };
+  const [showTravelDropdown, setShowTravelDropdown] = useState(false);
+  const [showCategoriesDropdown, setShowCategoriesDropdown] = useState(false);
   return (
     <>
       <div className={styles.header}>
@@ -68,58 +65,69 @@ const Header = () => {
         </div>
       </div>
       <nav className={styles.navbar}>
-        <div className={styles.container}>
+        <div className={styles.container}  onMouseLeave={() => {
+            setShowTravelDropdown(false);
+            setShowCategoriesDropdown(false);
+          }}>
           <div className={styles.navbar_content}>
             <ul className={styles.content_list}>
               {navItems.map((item) => {
                 return (
-                  <li key={item.id} className={styles.nav_item}>
-                    {item.title === "Travel" || item.title === "Categories" ? (
-                      <Link
-                        href={item.path}
-                        onMouseEnter={toggleSubItem}
-                        onMouseLeave={toggleSubItem}
-                      >
-                        {item.title}
-                      </Link>
-                    ) : (
-                      <Link href={item.path}>{item.title}</Link>
-                    )}
-                  </li>
+                  <Link
+                    href={item.path}
+                    key={item.id}
+                    className={styles.nav_item}
+                    onMouseEnter={() => {
+                      setShowTravelDropdown(item.title === "Travel");
+                      setShowCategoriesDropdown(item.title === "Categories");
+                    }}
+                    
+                  >
+                    {item.title}
+                  </Link>
+                  
                 );
               })}
+              <span className={styles.dropdown_icon}>&#9662;</span>
+                    <span className={styles.dropdown_icon1}>&#9662;</span>
             </ul>
+            {showTravelDropdown && (
+              <div
+                className={styles.dropdown_menu}
+                onMouseLeave={() => setShowTravelDropdown(false)}
+              >
+                {subNavItem.map((subitem) => {
+                  return (
+                    <Link
+                      href={subitem.path}
+                      key={subitem.title}
+                      className={styles.dropdown_menu_item}
+                    >
+                      {subitem.title}
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
+            {showCategoriesDropdown && (
+              <div
+                className={styles.dropdown_menu1}
+                onMouseLeave={() => setShowCategoriesDropdown(false)}
+              >
+                {subCategory.map((subCat) => {
+                  return (
+                    <Link
+                      href={subCat.path}
+                      key={subCat.id}
+                      className={styles.dropdown_menu_item}
+                    >
+                      {subCat.title}
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
           </div>
-          {openSubItem && (
-            <div className={styles.dropdown_menu}>
-              {subNavItem.map((subitem) => {
-                return (
-                  <Link
-                    href={subitem.path}
-                    key={subitem.title}
-                    className={styles.dropdown_menu_item}
-                  >
-                    {subitem.title}
-                  </Link>
-                );
-              })}
-            </div>
-          )}
-          {openSubItem && (
-            <div className={styles.dropdown_menu1}>
-              {subCategory.map((subCat) => {
-                return (
-                  <Link
-                    href={subCat.path}
-                    key={subCat.id}
-                    className={styles.dropdown_menu_item}
-                  >
-                    {subCat.title}
-                  </Link>
-                );
-              })}
-            </div>
-          )}
         </div>
       </nav>
     </>
