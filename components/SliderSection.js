@@ -4,25 +4,28 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Image from "next/image";
 import { SliderData } from "./NavItems";
 import Link from "next/link";
-// import Slide from "./slide";
 
-export default function SliderSection({ imagedata }) {
-  console.log(imagedata);
-  const [curr, setCurr] = useState(0);
-  // const length = imagedata.length;
-  const prev = () =>
-    setCurr((curr) => (curr == 0 ? imagedata.length - 1 : curr - 1));
-  const next = () =>
-    setCurr((curr) => (curr == imagedata.length - 1 ? 0 : curr + 1));
+export default function SliderSection({imagedata}) {
+  console.log(imagedata)
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % SliderData.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + SliderData.length) % SliderData.length);
+    const slideTransform = `translateX(-${currentSlide * 100}%)`;
+  };
   return (
     <>
       <section className={styles.site_section}>
         <div className={styles.container}>
           <div className={styles.site_row}>
             <div className={styles.site_col}>
-              {SliderData.map((imagedata, index) => {
+              {SliderData.map((imagedata) => {
                 return (
-                  <div className={styles.slide_outer} key={index}>
+                  <div className={styles.slide_outer} key={imagedata.id} >
                     <Link href="/">
                       <Image
                         src={imagedata.image}
@@ -46,10 +49,10 @@ export default function SliderSection({ imagedata }) {
                 );
               })}
               <div className={styles.site_slider}>
-                <button className={styles.leftbtn} onClick={prev}>
+                <button className={styles.leftbtn} onClick={prevSlide}>
                   <FaChevronLeft />
                 </button>
-                <button className={styles.rightbtn} onClick={next}>
+                <button className={styles.rightbtn} onClick={nextSlide}>
                   <FaChevronRight />
                 </button>
               </div>
