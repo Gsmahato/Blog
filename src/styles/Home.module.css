@@ -590,6 +590,9 @@
 
 /* ****************************** */
 /* moreblog section */
+.moreblog_section{
+  padding-bottom: 4rem;
+}
 .horizontal_card{
   display: block;
   margin-bottom: 3rem;
@@ -632,7 +635,6 @@
   display: block;
   max-width: 100%;
   max-height: 100%;
-  height: 100%;
   margin-bottom: 2rem;
   text-decoration: none;
 
@@ -679,8 +681,105 @@
   color: #fff;
   font-family: "Montserrat";
   text-transform: uppercase;
+  margin-left: 4rem;
+}
+.left_card2>ul{
+  list-style: none;
+}
+.left_card2>ul>li>a{
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 3rem;
+}
+.blog_content_body3{
+  position: relative;
+  padding: 0 2rem;
+  border-top: none;
+  max-height: 100%;
+}
+.half_text4>h2{
+  font-family: "Montserrat";
+  color: #fff;
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 1.2;
+}
+.post_date3{
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  margin-right: 0.1rem;
+  margin-bottom: 3rem;
+  font-family: "Montserrat";
 }
 
+.left_card3{
+  margin-left: auto;
+  flex: 0 0 20%;
+  max-width:20%;
+  position: relative;
+  min-height: .1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+}
+.quick_links>h3{
+  color: #fff;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-left: 4rem;
+}
+.social_media_links>h3{
+  color: #fff;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-left: 4rem;
+}
+.quick_links>ul,.social_media_links>ul{
+list-style: none;
+}
+.quick_links>ul>li>a{
+  color: rgba(255, 255, 255, 0.705);
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+.quick_links>ul>li>a:hover{
+  color: rgba(255, 255, 255, 0.444);
+}
+.social_media_links>ul>li>a>span{
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+}
+.social_media_links>ul>li>a>span>i>svg{
+  display: flex;
+  align-items: center;
+  width: 2rem;
+}
+.social_media_links>ul>li>a{
+  color: rgba(255, 255, 255, 0.705);
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+.social_media_links>ul>li>a:hover{
+  color: rgba(255, 255, 255, 0.444);
+
+}
+
+.site_row_footer{
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  max-height: 100%;
+}
 /* ****************************** */
 /* navbar section */
 
