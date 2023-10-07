@@ -65,14 +65,18 @@ const Header = () => {
         </div>
       </div>
       <nav className={styles.navbar}>
-        <div className={styles.container}  onMouseLeave={() => {
+        <div
+          className={styles.container}
+          onMouseLeave={() => {
             setShowTravelDropdown(false);
             setShowCategoriesDropdown(false);
-          }}>
+          }}
+        >
           <div className={styles.navbar_content}>
             <ul className={styles.content_list}>
               {navItems.map((item) => {
                 return (
+                  <div className={styles.drop_icon}>
                   <Link
                     href={item.path}
                     key={item.id}
@@ -81,15 +85,18 @@ const Header = () => {
                       setShowTravelDropdown(item.title === "Travel");
                       setShowCategoriesDropdown(item.title === "Categories");
                     }}
-                    
                   >
                     {item.title}
                   </Link>
+                  {item.title === "Travel" && <span className={styles.dropdown_icon}>&#9662;</span>}
+                  {item.title === "Categories" && <span className={styles.dropdown_icon1}>&#9662;</span>}
+                  </div>
                   
                 );
               })}
-              <span className={styles.dropdown_icon}>&#9662;</span>
-                    <span className={styles.dropdown_icon1}>&#9662;</span>
+
+              {/* <span className={styles.dropdown_icon}>&#9662;</span>
+              <span className={styles.dropdown_icon1}>&#9662;</span> */}
             </ul>
             {showTravelDropdown && (
               <div

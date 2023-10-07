@@ -6,8 +6,8 @@ import Header1 from "../../components/Header";
 export default function App({ Component, pageProps }) {
   return (
     <>
-    <Header1/>
-      {/* <Header /> */}
+    {/* <Header1/> */}
+      <Header />
       <Component {...pageProps} />
       <Footer/>
     </>
