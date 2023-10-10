@@ -88,13 +88,16 @@ const Footer = () => {
                 <h3>Quick Links</h3>
                 <ul>
                   <li>
-                    <Link href="">Lorem ipsum</Link>
+                    <Link href="">About Us</Link>
                   </li>
                   <li>
-                    <Link href="">Lorem ipsum</Link>
+                    <Link href="">Travel</Link>
                   </li>
                   <li>
-                    <Link href="">Lorem ipsum</Link>
+                    <Link href="">Categories</Link>
+                  </li>
+                  <li>
+                    <Link href="">Adventures</Link>
                   </li>
                 </ul>
               </div>
@@ -108,7 +111,7 @@ const Footer = () => {
                           <FaFacebookF />
                         </i>
                       </span>
-                      Lorem ipsum
+                      Facebook
                     </Link>
                   </li>
                   <li>
@@ -118,7 +121,7 @@ const Footer = () => {
                           <FaInstagram />
                         </i>
                       </span>
-                      Lorem ipsum
+                      Instagram
                     </Link>
                   </li>
                   <li>
@@ -128,7 +131,7 @@ const Footer = () => {
                           <FaLinkedinIn />
                         </i>
                       </span>
-                      Lorem ipsum
+                      LinkedIn
                     </Link>
                   </li>
                 </ul>
@@ -139,7 +142,7 @@ const Footer = () => {
         <div className={styles.container}>
           <div className={styles.site_row_footer}>
             <div>Copyright ©</div>
-            <div>2023 All rights Reserved.Gurusharan</div>
+            <div>2023 All rights Reserved.Gurusharan.</div>
           </div>
         </div>
       </footer>

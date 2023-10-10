@@ -7,6 +7,7 @@ import {
   FaLinkedinIn,
   FaSearch,
 } from "react-icons/fa";
+import {FiMenu} from "react-icons/fi"
 import { navItems, subNavItem, subCategory } from "./NavItems";
 const Header = () => {
   const [showTravelDropdown, setShowTravelDropdown] = useState(false);
@@ -57,7 +58,7 @@ const Header = () => {
       <div className={styles.container}>
         <div className={styles.logo_row}>
           <div className={styles.logo_text_centre}>
-            <Link href="/"></Link>
+            <Link href="/"><FiMenu/></Link>
             <h1 className={styles.site_logo}>
               <Link href="/">Gurusharan</Link>
             </h1>
