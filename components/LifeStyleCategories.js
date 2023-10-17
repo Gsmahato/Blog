@@ -8,7 +8,7 @@ import image2 from "../public/image2.jpg";
 import image3 from "../public/image3.jpg";
 import image4 from "../public/image4.jpg";
 
-const LifeStyleCategories = () => {
+const LifeStyleCategories = ({ data }) => {
   return (
     <>
       <div className={styles.category_section}>
@@ -21,84 +21,31 @@ const LifeStyleCategories = () => {
           <div className={styles.blog_enteries}>
             <div className={styles.left_col}>
               <div className={styles.left_row}>
-                <div className={styles.left_card}>
-                  <Link href="/">
-                    <Image src={image1} width={350} height={234} alt="" />
-                    <div className={styles.blog_content_body}>
-                      <div className={styles.half_text2}>
-                        <div className={styles.post_meta2}>
-                          <span className={styles.post_category2}>
-                            Category
-                          </span>
-                          <span className={styles.post_date2}>2023/10/4</span>
+                {data.blogs.map((blog) => (
+                  <div className={styles.left_card} key={blog._id}>
+                    <Link href={`/blog/${blog._id}`}>
+                      <Image
+                        src={`https://photos.google.com/u/3/photo${blog.featured_image}`}
+                        width={350}
+                        height={234}
+                        alt=""
+                      />
+                      <div className={styles.blog_content_body}>
+                        <div className={styles.half_text2}>
+                          <div className={styles.post_meta2}>
+                            <span className={styles.post_category2}>
+                              {blog.category}
+                            </span>
+                            <span className={styles.post_date2}>
+                              {blog.createdAt} {blog._id}
+                            </span>
+                          </div>
+                          <h2>{blog.title}</h2>
                         </div>
-                        <h2>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </h2>
                       </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className={styles.left_card}>
-                  <Link href="/">
-                    <Image src={image2} width={350} height={234} alt="" />
-                    <div className={styles.blog_content_body}>
-                      <div className={styles.half_text2}>
-                        <div className={styles.post_meta2}>
-                          <span className={styles.post_category2}>
-                            Category
-                          </span>
-                          <span className={styles.post_date2}>2023/10/4</span>
-                        </div>
-                        <h2>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </h2>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className={styles.left_card}>
-                  <Link href="/">
-                    <Image src={image3} width={350} height={234} alt="" />
-                    <div className={styles.blog_content_body}>
-                      <div className={styles.half_text2}>
-                        <div className={styles.post_meta2}>
-                          <span className={styles.post_category2}>
-                            Category
-                          </span>
-                          <span className={styles.post_date2}>2023/10/4</span>
-                        </div>
-                        <h2>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Non harum ad animi voluptas quia ea quisquam
-                          fuga maxime
-                        </h2>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className={styles.left_card}>
-                  <Link href="/">
-                    <Image src={image4} width={350} height={234} alt="" />
-                    <div className={styles.blog_content_body}>
-                      <div className={styles.half_text2}>
-                        <div className={styles.post_meta2}>
-                          <span className={styles.post_category2}>
-                            Category
-                          </span>
-                          <span className={styles.post_date2}>2023/10/4</span>
-                        </div>
-                        <h2>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Non harum ad animi voluptas quia ea quisquam
-                          fuga maxime
-                        </h2>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
+                    </Link>
+                  </div>
+                ))}
               </div>
             </div>
             <div className={styles.right_col}></div>

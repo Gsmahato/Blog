@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import TopSection from '../../components/SliderSection'
-import SliderSection from '../../components/SliderSection'
-import CardSection from '../../components/CardSection'
-import LifeStyleCategories from '../../components/LifeStyleCategories'
-import MoreBlog from '../../components/MoreBlog'
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import TopSection from "../../components/SliderSection";
+import SliderSection from "../../components/SliderSection";
+import CardSection from "../../components/CardSection";
+import LifeStyleCategories from "../../components/LifeStyleCategories";
+import MoreBlog from "../../components/MoreBlog";
+const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -18,10 +18,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <SliderSection/>
-      <CardSection/>
-      <LifeStyleCategories/>
-      <MoreBlog/>
+      <SliderSection />
+      <CardSection />
+      <LifeStyleCategories data={data}/>
+      <MoreBlog />
     </>
-  )
+  );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch(
+    `https://blog-backend-sigma-eight.vercel.app/api/v1/blog/all-blog`
+  );
+  const data = await res.json();
+  return {
+    props: { data },
+  };
 }

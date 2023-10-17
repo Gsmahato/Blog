@@ -6,7 +6,6 @@ import { SliderData } from "./NavItems";
 import Link from "next/link";
 
 export default function SliderSection({imagedata}) {
-  console.log(imagedata)
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {

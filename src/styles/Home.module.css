@@ -773,6 +773,14 @@ list-style: none;
   max-height: 100%;
 }
 /* ****************************** */
+/* Blog Page*/
+
+.blogpage_site{
+  padding: 7em 0;
+}
+
+
+/* ****************************** */
 /* Responsive */
 
 @media (max-width: 576px){
