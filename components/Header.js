@@ -7,9 +7,8 @@ import {
   FaLinkedinIn,
   FaSearch,
 } from "react-icons/fa";
-import {FiMenu} from "react-icons/fi"
-import { navItems, subNavItem, subCategory } from "./NavItems";
-const Header = () => {
+import { FiMenu } from "react-icons/fi";
+const Header = ({ item, data }) => {
   const [showTravelDropdown, setShowTravelDropdown] = useState(false);
   const [showCategoriesDropdown, setShowCategoriesDropdown] = useState(false);
   return (
@@ -58,7 +57,9 @@ const Header = () => {
       <div className={styles.container}>
         <div className={styles.logo_row}>
           <div className={styles.logo_text_centre}>
-            <Link href="/"><FiMenu/></Link>
+            <Link href="/">
+              <FiMenu />
+            </Link>
             <h1 className={styles.site_logo}>
               <Link href="/">Gurusharan</Link>
             </h1>
@@ -75,46 +76,41 @@ const Header = () => {
         >
           <div className={styles.navbar_content}>
             <ul className={styles.content_list}>
-              {navItems.map((item) => {
-                return (
-                  <div className={styles.drop_icon}>
+              {item.items.map((navitem) => (
+                <li className={styles.drop_icon} key={navitem._id}>
                   <Link
-                    href={item.path}
-                    key={item.id}
+                    href="/"
                     className={styles.nav_item}
                     onMouseEnter={() => {
-                      setShowTravelDropdown(item.title === "Travel");
-                      setShowCategoriesDropdown(item.title === "Categories");
+                      setShowTravelDropdown(navitem.title === "Travel");
+                      setShowCategoriesDropdown(navitem.title === "Categories");
                     }}
                   >
-                    {item.title}
+                    {navitem.title}
                   </Link>
-                  {item.title === "Travel" && <span className={styles.dropdown_icon}>&#9662;</span>}
-                  {item.title === "Categories" && <span className={styles.dropdown_icon1}>&#9662;</span>}
-                  </div>
-                  
-                );
-              })}
-
-              {/* <span className={styles.dropdown_icon}>&#9662;</span>
-              <span className={styles.dropdown_icon1}>&#9662;</span> */}
+                  {navitem.title === "Travel" && (
+                    <span className={styles.dropdown_icon}>&#9662;</span>
+                  )}
+                  {navitem.title === "Categories" && (
+                    <span className={styles.dropdown_icon1}>&#9662;</span>
+                  )}
+                </li>
+              ))}
             </ul>
             {showTravelDropdown && (
               <div
                 className={styles.dropdown_menu}
                 onMouseLeave={() => setShowTravelDropdown(false)}
               >
-                {subNavItem.map((subitem) => {
-                  return (
-                    <Link
-                      href={subitem.path}
-                      key={subitem.title}
-                      className={styles.dropdown_menu_item}
-                    >
-                      {subitem.title}
-                    </Link>
-                  );
-                })}
+                {data.blogs.map((subitem) => (
+                  <Link
+                    href="/"
+                    key={subitem._id}
+                    className={styles.dropdown_menu_item}
+                  >
+                    {subitem.category}
+                  </Link>
+                ))}
               </div>
             )}
             {showCategoriesDropdown && (
@@ -122,17 +118,15 @@ const Header = () => {
                 className={styles.dropdown_menu1}
                 onMouseLeave={() => setShowCategoriesDropdown(false)}
               >
-                {subCategory.map((subCat) => {
-                  return (
-                    <Link
-                      href={subCat.path}
-                      key={subCat.id}
-                      className={styles.dropdown_menu_item}
-                    >
-                      {subCat.title}
-                    </Link>
-                  );
-                })}
+                {data.blogs.map((subCat) => (
+                  <Link
+                    href="/"
+                    key={subCat._id}
+                    className={styles.dropdown_menu_item}
+                  >
+                    {subCat.category}
+                  </Link>
+                ))}
               </div>
             )}
           </div>

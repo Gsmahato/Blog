@@ -9,7 +9,7 @@ import LifeStyleCategories from "../../components/LifeStyleCategories";
 import MoreBlog from "../../components/MoreBlog";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ data }) {
+export default function Home({ data}) {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ export default function Home({ data }) {
       </Head>
       <SliderSection />
       <CardSection />
-      <LifeStyleCategories data={data}/>
+      <LifeStyleCategories data={data} />
       <MoreBlog />
     </>
   );
@@ -31,7 +31,12 @@ export async function getServerSideProps() {
     `https://blog-backend-sigma-eight.vercel.app/api/v1/blog/all-blog`
   );
   const data = await res.json();
+
+  const nav = await fetch(
+    `https://blog-backend-sigma-eight.vercel.app/api/v1/navitem/get-navitem`
+  );
+  const item = await nav.json();
   return {
-    props: { data },
+    props: { data, item },
   };
 }
