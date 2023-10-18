@@ -7,7 +7,7 @@ export default function App({ Component, pageProps,}) {
  
   return (
     <>
-      <Header item={item.items} data={data}/>
+      <Header item={item?.items} data={data}/>
       <Component {...pageProps} />
       <Footer/>
     </>

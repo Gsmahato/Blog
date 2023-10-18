@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 const Header = ({ item, data }) => {
+  console.log(item)
   const [showTravelDropdown, setShowTravelDropdown] = useState(false);
   const [showCategoriesDropdown, setShowCategoriesDropdown] = useState(false);
   return (
