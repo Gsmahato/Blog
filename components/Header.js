@@ -8,8 +8,8 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
-const Header = ({ item, data }) => {
-const blogitem = item.items.map(bitem=>bitem)
+const Header = ({ items, data }) => {
+  console.log(items)
   const [showTravelDropdown, setShowTravelDropdown] = useState(false);
   const [showCategoriesDropdown, setShowCategoriesDropdown] = useState(false);
   return (
@@ -77,7 +77,7 @@ const blogitem = item.items.map(bitem=>bitem)
         >
           <div className={styles.navbar_content}>
             <ul className={styles.content_list}>
-              {blogitem.map((navitem) => (
+              {items.map((navitem) => (
                 <li className={styles.drop_icon} key={navitem._id}>
                   <Link
                     href="/"

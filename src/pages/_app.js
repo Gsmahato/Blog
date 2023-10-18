@@ -3,10 +3,11 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 export default function App({ Component, pageProps,}) {
-  const {item,data} =pageProps;  
+  const items = pageProps.item.items;
+  const {data} =pageProps;  
   return (
     <>
-      <Header item={item} data={data}/>
+      <Header items={items} data={data}/>
       <Component {...pageProps} />
       <Footer/>
     </>
