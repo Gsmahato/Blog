@@ -7,7 +7,7 @@ export default function App({ Component, pageProps,}) {
   const blogitem = item.items
   return (
     <>
-      <Header blogitem={blogitem} data={data}/>
+      {/* <Header blogitem={blogitem} data={data}/> */}
       <Component {...pageProps} />
       <Footer/>
     </>
