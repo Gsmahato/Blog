@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 const Header = ({ blogitem, data }) => {
-  console.log(blogitem)
+  console.log(blogitem);
   const [showTravelDropdown, setShowTravelDropdown] = useState(false);
   const [showCategoriesDropdown, setShowCategoriesDropdown] = useState(false);
   return (
@@ -41,7 +41,41 @@ const Header = ({ blogitem, data }) => {
                   </span>
                 </Link>
               </div>
-              <div className={styles.search_content}>
+              <nav>
+                <ul className={styles.main_nav}>
+                  <li className={styles.main_list}>
+                    <Link href="/">
+                      <span className={styles.main_nav_item}>Home</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about">
+                      <span>About</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about">
+                      <span>Services</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">
+                      <span>Contact</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog">
+                      <span>Blog</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/puresource">
+                      <span>PU Resources</span>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              {/* <div className={styles.search_content}>
                 <form action="#" className={styles.search_top_form}>
                   <span className={styles.search_icon_top}>
                     <i>
@@ -50,24 +84,13 @@ const Header = ({ blogitem, data }) => {
                   </span>
                   <input type="text" placeholder="Type keyword to search..." />
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.container}>
-        <div className={styles.logo_row}>
-          <div className={styles.logo_text_centre}>
-            <Link href="/">
-              <FiMenu />
-            </Link>
-            <h1 className={styles.site_logo}>
-              <Link href="/">Gurusharan</Link>
-            </h1>
-          </div>
-        </div>
-      </div>
-      <nav className={styles.navbar}>
+      
+      {/* <nav className={styles.navbar}>
         <div
           className={styles.container}
           onMouseLeave={() => {
@@ -132,7 +155,7 @@ const Header = ({ blogitem, data }) => {
             )}
           </div>
         </div>
-      </nav>
+      </nav> */}
     </>
   );
 };

@@ -7,6 +7,8 @@ import SliderSection from "../../components/SliderSection";
 import CardSection from "../../components/CardSection";
 import LifeStyleCategories from "../../components/LifeStyleCategories";
 import MoreBlog from "../../components/MoreBlog";
+import Homeabout from "../../components/Home_about";
+import Header1 from "../../components/Header1";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data}) {
@@ -18,10 +20,12 @@ export default function Home({ data}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <SliderSection />
-      <CardSection />
-      <LifeStyleCategories data={data} />
-      <MoreBlog />
+      <Header1/>
+      <Homeabout/>
+      {/* <SliderSection /> */}
+      {/* <CardSection /> */}
+      {/* <LifeStyleCategories data={data} /> */}
+      {/* <MoreBlog /> */}
     </>
   );
 }
