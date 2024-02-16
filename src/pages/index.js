@@ -14,7 +14,7 @@ import Projects from "../../components/Projects";
 import Feedback from "../../components/Feedback";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ data}) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -27,7 +27,7 @@ export default function Home({ data}) {
       <Homeabout/>
       <Services/>
       <Projects/>
-      <Feedback/>
+      <Feedback data={data}/>
       {/* <SliderSection /> */}
       {/* <CardSection /> */}
       {/* <LifeStyleCategories data={data} /> */}
@@ -35,6 +35,33 @@ export default function Home({ data}) {
     </>
   );
 }
+
+const data = [
+  {
+    name: 'Amir',
+    position: 'CEO at Facebook',
+    image:'',
+    feedback:'abcxyz'
+  },
+  {
+    name: 'Amir',
+    position: 'CEO at Facebook',
+    image:'',
+    feedback:'abcxyz'
+  },
+  {
+    name: 'Amir',
+    position: 'CEO at Facebook',
+    image:'',
+    feedback:'abcxyz'
+  },
+  {
+    name: 'Amir',
+    position: 'CEO at Facebook',
+    image:'',
+    feedback:'abcxyz'
+  }
+]
 
 export async function getServerSideProps() {
   const res = await fetch(

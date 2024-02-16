@@ -296,6 +296,58 @@
   position: relative;
   margin-bottom: 4rem;
 }
+
+.project_content{
+  text-align: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 7rem;
+}
+/* ------------------------------------------------------------------ */
+
+.feedback_items{
+  width: 60rem;
+  min-height: 0.16rem;
+  backface-visibility: hidden;
+  background-color: #05101c;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.single_testomonial_item{
+  padding: 3rem 4rem 2rem 4rem ;
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: row;
+  transition: all 0.3s ease 0s;
+  box-sizing: border-box;
+}
+.feedback_person{
+  margin-right: 3.5rem;
+}
+.feedback_person>img{
+  transform-style: preserve-3d;
+  vertical-align: middle;
+  border-style: none;
+  border-radius: 50%;
+}
+.feedback_desc>p{
+  color: #a5a5a5;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  position: relative;
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+.feedback_desc>h4{
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  margin: 0;
+}
 /* ****************************** */
 /* navbar section */
 .navbar{

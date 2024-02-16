@@ -7,7 +7,7 @@ const Projects = () => {
     <div className={styles.service_container}>
       <div className={styles.container}>
         <div className={styles.service_title}>
-          <div className={styles.service_content}>
+          <div className={styles.project_content}>
             <h1 className={styles.service_title_text}>Our Latest Featured Projects</h1>
             <p className={styles.service_paragraph}>
             Who are in extremely love with eco friendly system.
