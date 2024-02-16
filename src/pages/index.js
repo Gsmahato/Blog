@@ -9,6 +9,9 @@ import LifeStyleCategories from "../../components/LifeStyleCategories";
 import MoreBlog from "../../components/MoreBlog";
 import Homeabout from "../../components/Home_about";
 import Header1 from "../../components/Header1";
+import Services from "../../components/Services";
+import Projects from "../../components/Projects";
+import Feedback from "../../components/Feedback";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data}) {
@@ -22,6 +25,9 @@ export default function Home({ data}) {
       </Head>
       <Header1/>
       <Homeabout/>
+      <Services/>
+      <Projects/>
+      <Feedback/>
       {/* <SliderSection /> */}
       {/* <CardSection /> */}
       {/* <LifeStyleCategories data={data} /> */}

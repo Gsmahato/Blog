@@ -24,7 +24,7 @@
 .sub_container{
   padding: 8rem 0 8rem 0;
   width: 100%;
-  background: linear-gradient(to bottom,#000000, #15034f, #000000);
+  background: linear-gradient(to bottom,#000000, #15034f);
 }
 .content_row{
   display: flex;
@@ -152,8 +152,8 @@
 
 .about_container{
   display: block;
-  padding: 8rem 0 8rem 0;
-  background: linear-gradient(to bottom,#000000, #4d034f, #000000);
+  padding: 1rem 0 8rem 0;
+  background: linear-gradient(to bottom, #15034f, #000000);
 }
 .about_row{
   display: flex;
@@ -162,8 +162,10 @@
 }
 .about_left,.about_right{
   flex: 1;
-  padding: 5rem;
   box-sizing: border-box;
+}
+.about_left{
+  padding: 5rem 10rem 5rem 0;
 }
 .about_left>img{
   max-width: 100%;
@@ -176,6 +178,7 @@
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
+  padding: 5rem 0 5rem 10rem;
 }
 .about_right_h6{
   text-transform: uppercase;
@@ -189,7 +192,7 @@
   margin-bottom: 4rem;
   font-weight: 600;
   font-size: 3.6rem;
-  line-height: 3rem;
+  line-height: 4rem;
   margin-top: 0;
   color: #fff;
 }
@@ -215,6 +218,83 @@
   text-decoration: none;
   text-transform: uppercase;
   background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+}
+
+
+
+/* ----------------------------------------- */
+
+.service_container{
+  padding: 8rem 0 8rem 0;
+  background: linear-gradient(to bottom,#000000, #15034f, #000000);
+}
+.service_title{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.service_content{
+  text-align: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.service_title_text{
+  margin-bottom: 4rem;
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  margin-top: 0;
+  color: #fff;
+}
+.service_paragraph{
+  color: #a5a5a5;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.offered_row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.offered_column{
+  flex: 0 0 33.33333%;
+  box-sizing: border-box;
+  max-width: 33.3333%;
+  width: 100%;
+  position: relative;
+  min-height: 0.16rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.single_services{
+  text-align: center;
+  margin-top: 6rem;
+}
+.single_services>span>svg{
+  color: #fff;
+  height: 5rem;
+  width: 5rem;
+}
+.single_services>a{
+  text-decoration: none;
+}
+.offered_title{
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+.offered_paragraph{
+  color: #a5a5a5;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  position: relative;
+  margin-bottom: 4rem;
 }
 /* ****************************** */
 /* navbar section */
