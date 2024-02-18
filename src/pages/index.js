@@ -27,7 +27,7 @@ export default function Home() {
       <Homeabout/>
       <Services/>
       <Projects/>
-      <Feedback data={data}/>
+      <Feedback/>
       {/* <SliderSection /> */}
       {/* <CardSection /> */}
       {/* <LifeStyleCategories data={data} /> */}
@@ -36,32 +36,6 @@ export default function Home() {
   );
 }
 
-const data = [
-  {
-    name: 'Amir',
-    position: 'CEO at Facebook',
-    image:'',
-    feedback:'abcxyz'
-  },
-  {
-    name: 'Amir',
-    position: 'CEO at Facebook',
-    image:'',
-    feedback:'abcxyz'
-  },
-  {
-    name: 'Amir',
-    position: 'CEO at Facebook',
-    image:'',
-    feedback:'abcxyz'
-  },
-  {
-    name: 'Amir',
-    position: 'CEO at Facebook',
-    image:'',
-    feedback:'abcxyz'
-  }
-]
 
 export async function getServerSideProps() {
   const res = await fetch(

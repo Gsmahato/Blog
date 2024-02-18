@@ -2,8 +2,9 @@ import React from "react";
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import image from "../public/ganesha.jpeg";
+import CardHome from "./CardHome";
 
-const Feedback = ({ data }) => {
+const Feedback = () => {
   return (
     <div className={styles.service_container}>
       <div className={styles.container}>
@@ -18,7 +19,9 @@ const Feedback = ({ data }) => {
             </p>
           </div>
         </div>
-        {data.map((d) => (
+        <div className={styles.F_slide}><CardHome/></div>
+        
+        {/* {data.map((d) => (
           <div className={styles.feedback_items}>
             <div className={styles.single_testomonial_item}>
               <div className={styles.feedback_person}>
@@ -31,7 +34,7 @@ const Feedback = ({ data }) => {
               </div>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );
