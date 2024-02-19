@@ -15,6 +15,87 @@ import Feedback from "../../components/Feedback";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const featuredProjects = [
+    {
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: '/project1.jpg', // Replace with actual image path
+      link: 'https://example.com/project1',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 2',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: '/project2.jpg', // Replace with actual image path
+      link: 'https://example.com/project2',
+    },
+    // Add more projects as needed
+  ];
   return (
     <>
       <Head>
@@ -26,7 +107,7 @@ export default function Home() {
       <Header1/>
       <Homeabout/>
       <Services/>
-      <Projects/>
+      <Projects projects={featuredProjects}/>
       <Feedback/>
       <CardSection />
       {/* <SliderSection /> */}

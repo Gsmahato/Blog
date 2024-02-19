@@ -51,7 +51,7 @@ const Feedback = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000); // Change the interval (in milliseconds) according to your preference
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, [currentCard]);
@@ -88,21 +88,6 @@ const Feedback = () => {
             </button>
           </div>
         </div>
-
-        {/* {data.map((d) => (
-          <div className={styles.feedback_items}>
-            <div className={styles.single_testomonial_item}>
-              <div className={styles.feedback_person}>
-                <Image src={image} width={35} height={35} />
-              </div>
-              <div className={styles.feedback_desc}>
-                <p>{d.description}</p>
-                <h4>John Cena</h4>
-                <p>{d.position}</p>
-              </div>
-            </div>
-          </div>
-        ))} */}
       </div>
     </div>
   );

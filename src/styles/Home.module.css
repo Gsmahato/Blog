@@ -68,7 +68,7 @@
   text-decoration: none;
 }
 .main_nav>li>a{
-  color: #8877e8;
+  color: #3498db;
   text-decoration: none;
   transition: .3s all ease;
   font-size: 1.8rem;
@@ -364,6 +364,48 @@
 /* .sliderbtn */
 .sliderbtnpre,.sliderbtnnxt{
   margin: 10rem 0;
+}
+
+
+/* ----------------------------------- */
+.featuredProjects {
+  margin: 4rem 0;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projectCard {
+  width: calc(33.33% - 2rem); /* Adjust the width and margin as needed */
+  margin: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.projectCard>h3 {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.projectCard>p {
+  margin-top: 1rem;
+  color: #a5a5a5;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem
+}
+
+.projectCard>a {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
 }
 /* ****************************** */
 /* navbar section */
@@ -661,7 +703,7 @@
   max-height: 100%;
 }
 .col_space:hover .overlays1{
-  background-color: rgba(158, 156, 156, 0.677);
+  background-color: rgba(44, 44, 44, 0.677);
 }
 .col_space>a{
   position: relative;
@@ -857,10 +899,10 @@
 /* ****************************** */
 /* footer section */
 
-/* .footer{
+.footer{
   background: #000;
   padding: 5rem 0;
-} */
+}
 .left_card1{
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
@@ -903,8 +945,10 @@
   max-height: 100%;
 }
 .half_text3>p{
-  color: rgba(255, 255, 255, 0.5);
-  /* font-family: "Montserrat"; */
+  color: #a5a5a5;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;  /* font-family: "Montserrat"; */
 
 }
 .left_card2{
@@ -982,7 +1026,10 @@
 list-style: none;
 }
 .quick_links>ul>li>a{
-  color: rgba(255, 255, 255, 0.705);
+  color: #a5a5a5;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
   display: flex;
   text-decoration: none;
   padding-bottom: 1rem;
@@ -1002,8 +1049,10 @@ list-style: none;
   width: 2rem;
 }
 .social_media_links>ul>li>a{
-  color: rgba(255, 255, 255, 0.705);
-  display: flex;
+  color: #a5a5a5;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;  display: flex;
   text-decoration: none;
   padding-bottom: 1rem;
   gap: 1rem;
