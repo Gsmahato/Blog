@@ -307,9 +307,10 @@
 
 .feedback_items{
   width: 60rem;
+  height: 30rem;
   min-height: 0.16rem;
   backface-visibility: hidden;
-  background-color: #05101c;
+  background-color: #050236;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -317,7 +318,7 @@
 .single_testomonial_item{
   padding: 3rem 4rem 2rem 4rem ;
   display: flex;
-  flex: 0 0 50%;
+  /* flex: 0 0 50%; */
   flex-direction: row;
   transition: all 0.3s ease 0s;
   box-sizing: border-box;
@@ -350,10 +351,15 @@
 }
 .F_slide{
   display: flex;
+  width: 100%;
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
   max-width: 60rem;
+}
+.cardsWrapper{
+  display: flex;
+  gap: 1rem;
 }
 /* ****************************** */
 /* navbar section */

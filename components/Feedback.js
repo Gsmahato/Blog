@@ -1,10 +1,62 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import image from "../public/ganesha.jpeg";
 import CardHome from "./CardHome";
+import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
+
 
 const Feedback = () => {
+  const data = [
+    {
+      name: "Amir",
+      position: "CEO at Facebook",
+      image: "",
+      feedback:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, molestias ratione accusamus omnis quae, nemo dignissimos animi ea repellat ex inventore nostrum perspiciatis! Velit commodi atque reprehenderit esse numquam quas?",
+    },
+    {
+      name: "Roshan",
+      position: "CEO at Facebook",
+      image: "",
+      feedback: "abcxyz",
+    },
+    {
+      name: "Aayush",
+      position: "CEO at Facebook",
+      image: "",
+      feedback: "abcxyz",
+    },
+    {
+      name: "Divyansh",
+      position: "CEO at Facebook",
+      image: "",
+      feedback: "abcxyz",
+    },
+  ];
+
+  const [currentCard, setCurrentCard] = useState(0);
+
+  const handleNext = () => {
+    setCurrentCard((prevCard) =>
+      prevCard + 2 >= data.length ? 0 : prevCard + 2
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentCard((prevCard) =>
+      prevCard - 2 < 0 ? data.length - 2 : prevCard - 2
+    );
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 10000); // Change the interval (in milliseconds) according to your preference
+
+    return () => clearInterval(interval);
+  }, [currentCard]);
+
   return (
     <div className={styles.service_container}>
       <div className={styles.container}>
@@ -19,8 +71,17 @@ const Feedback = () => {
             </p>
           </div>
         </div>
-        <div className={styles.F_slide}><CardHome/></div>
-        
+        <div className={styles.F_slide}>
+          <div className={styles.cardsWrapper}>
+            <CardHome data={data[currentCard]} />
+            {currentCard + 1 < data.length && (
+              <CardHome data={data[currentCard + 1]} />
+            )}
+          </div>
+          <button onClick={handlePrev}><MdNavigateBefore/></button>
+          <button onClick={handleNext}><MdNavigateNext/></button>
+        </div>
+
         {/* {data.map((d) => (
           <div className={styles.feedback_items}>
             <div className={styles.single_testomonial_item}>
