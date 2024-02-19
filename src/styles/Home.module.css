@@ -306,11 +306,11 @@
 /* ------------------------------------------------------------------ */
 
 .feedback_items{
-  width: 60rem;
-  height: 30rem;
+  width: 55rem;
+  height: 35rem;
   min-height: 0.16rem;
   backface-visibility: hidden;
-  background-color: #050236;
+  background: linear-gradient(to bottom, #15044a, #000000);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -318,7 +318,6 @@
 .single_testomonial_item{
   padding: 3rem 4rem 2rem 4rem ;
   display: flex;
-  /* flex: 0 0 50%; */
   flex-direction: row;
   transition: all 0.3s ease 0s;
   box-sizing: border-box;
@@ -355,11 +354,16 @@
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
-  max-width: 60rem;
+  transform: 0.5s ease-in-out;
+  overflow: hidden;
 }
 .cardsWrapper{
   display: flex;
   gap: 1rem;
+}
+/* .sliderbtn */
+.sliderbtnpre,.sliderbtnnxt{
+  margin: 10rem 0;
 }
 /* ****************************** */
 /* navbar section */
@@ -657,7 +661,7 @@
   max-height: 100%;
 }
 .col_space:hover .overlays1{
-  background-color: rgba(0, 0, 0, 0.256);
+  background-color: rgba(158, 156, 156, 0.677);
 }
 .col_space>a{
   position: relative;
@@ -853,10 +857,10 @@
 /* ****************************** */
 /* footer section */
 
-.footer{
+/* .footer{
   background: #000;
   padding: 5rem 0;
-}
+} */
 .left_card1{
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
@@ -883,12 +887,12 @@
 }
 .left_card1>h3{
   color: #fff;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   text-transform: uppercase;
 }
 .blog_content_body2{
   position: relative;
-  padding: 2rem;
+  /* padding: 1rem 2rem 2rem 0; */
   border-top: none;
   max-height: 100%;
   top: -1rem;
@@ -900,7 +904,7 @@
 }
 .half_text3>p{
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
 
 }
 .left_card2{
@@ -915,7 +919,7 @@
 }
 .left_card2>h3{
   color: #fff;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   text-transform: uppercase;
   margin-left: 4rem;
 }
@@ -934,7 +938,7 @@
   max-height: 100%;
 }
 .half_text4>h2{
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   color: #fff;
   margin: 0;
   font-size: 1.75rem;
@@ -949,7 +953,7 @@
   letter-spacing: 0.1rem;
   margin-right: 0.1rem;
   margin-bottom: 3rem;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
 }
 
 .left_card3{
@@ -964,13 +968,13 @@
 }
 .quick_links>h3{
   color: #fff;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   text-transform: uppercase;
   margin-left: 4rem;
 }
 .social_media_links>h3{
   color: #fff;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   text-transform: uppercase;
   margin-left: 4rem;
 }

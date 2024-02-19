@@ -9,8 +9,19 @@ import image2 from "../public/image2.jpg";
 const CardSection = () => {
   return (
     <>
-      <div className={styles.card_section}>
-        <div className={styles.card_container}>
+      <div className={styles.service_container}>
+        <div className={styles.container}>
+          <div className={styles.service_title}>
+            <div className={styles.project_content}>
+              <h1 className={styles.service_title_text}>
+                Latest Posts From Our Blog
+              </h1>
+              <p className={styles.service_paragraph}>
+                It is very easy to start smoking but it is an uphill task to
+                quit it. Ask any chain smoker or even a person.
+              </p>
+            </div>
+          </div>
           <div className={styles.row_space}>
             <div className={styles.col_space}>
               <Link href="/">

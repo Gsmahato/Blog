@@ -13,13 +13,13 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className={styles.footer}>
-        <div className={styles.container}>
+      <div className={styles.service_container}>
+      <div className={styles.container}>
           <div className={styles.site_row}>
             <div className={styles.left_card1}>
-              <h3>Paragraph</h3>
-              <Link href="/">
-                <Image src={image1} width={350} height={234} alt="" />
+              <h3>About Me</h3>
+              {/* <Link href="/"> */}
+                {/* <Image src={image1} width={350} height={234} alt="" /> */}
                 <div className={styles.blog_content_body2}>
                   <div className={styles.half_text3}>
                     <p>
@@ -28,68 +28,28 @@ const Footer = () => {
                     </p>
                   </div>
                 </div>
-              </Link>
+              {/* </Link> */}
             </div>
             <div className={styles.left_card2}>
-              <h3>Latest Posts</h3>
-              <ul>
-                <li>
-                  <Link href="">
-                    <Image src={image1} width={90} height={60} alt="images" />
-                    <div className={styles.blog_content_body3}>
-                      <div className={styles.half_text4}>
-                        <h2>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </h2>
-                        <div className={styles.post_meta2}>
-                          <span className={styles.post_date3}>2023/10/4</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="">
-                    <Image src={image1} width={90} height={60} alt="images" />
-                    <div className={styles.blog_content_body3}>
-                      <div className={styles.half_text4}>
-                        <h2>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </h2>
-                        <div className={styles.post_meta2}>
-                          <span className={styles.post_date3}>2023/10/4</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="">
-                    <Image src={image1} width={90} height={60} alt="images" />
-                    <div className={styles.blog_content_body3}>
-                      <div className={styles.half_text4}>
-                        <h2>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </h2>
-                        <div className={styles.post_meta2}>
-                          <span className={styles.post_date3}>2023/10/4</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </li>
-              </ul>
+            <div className={styles.quick_links}>
+                <h3>Explore</h3>
+                <ul>
+                  <li>
+                    <Link href="">Contact us</Link>
+                  </li>
+                  <li>
+                    <Link href="">Blog</Link>
+                  </li>
+                  <li>
+                    <Link href="">PU Resources</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className={styles.left_card3}>
               <div className={styles.quick_links}>
                 <h3>Quick Links</h3>
                 <ul>
-                  <li>
-                    <Link href="">About Us</Link>
-                  </li>
                   <li>
                     <Link href="">Travel</Link>
                   </li>
@@ -102,7 +62,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className={styles.social_media_links}>
-                <h3>Quick Links</h3>
+                <h3>Follow Me</h3>
                 <ul>
                   <li>
                     <Link href="">
@@ -142,10 +102,10 @@ const Footer = () => {
         <div className={styles.container}>
           <div className={styles.site_row_footer}>
             <div>Copyright ©</div>
-            <div>2023 All rights Reserved.Gurusharan.</div>
+            <div>2024 All rights Reserved.Gurusharan.</div>
           </div>
         </div>
-      </footer>
+      </div>
     </>
   );
 };

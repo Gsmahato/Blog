@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Header blogitem={blogitem} data={data} />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

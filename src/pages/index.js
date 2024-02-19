@@ -28,8 +28,8 @@ export default function Home() {
       <Services/>
       <Projects/>
       <Feedback/>
+      <CardSection />
       {/* <SliderSection /> */}
-      {/* <CardSection /> */}
       {/* <LifeStyleCategories data={data} /> */}
       {/* <MoreBlog /> */}
     </>

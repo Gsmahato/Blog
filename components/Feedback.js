@@ -5,7 +5,6 @@ import image from "../public/ganesha.jpeg";
 import CardHome from "./CardHome";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
 
-
 const Feedback = () => {
   const data = [
     {
@@ -39,20 +38,20 @@ const Feedback = () => {
 
   const handleNext = () => {
     setCurrentCard((prevCard) =>
-      prevCard + 2 >= data.length ? 0 : prevCard + 2
+      prevCard + 1 >= data.length ? 0 : prevCard + 1
     );
   };
 
   const handlePrev = () => {
     setCurrentCard((prevCard) =>
-      prevCard - 2 < 0 ? data.length - 2 : prevCard - 2
+      prevCard - 1 < 0 ? data.length - 2 : prevCard - 1
     );
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 10000); // Change the interval (in milliseconds) according to your preference
+    }, 3000); // Change the interval (in milliseconds) according to your preference
 
     return () => clearInterval(interval);
   }, [currentCard]);
@@ -73,13 +72,21 @@ const Feedback = () => {
         </div>
         <div className={styles.F_slide}>
           <div className={styles.cardsWrapper}>
-            <CardHome data={data[currentCard]} />
-            {currentCard + 1 < data.length && (
-              <CardHome data={data[currentCard + 1]} />
-            )}
+            {data.map((_, index) => (
+              <CardHome
+                key={index}
+                data={data[(currentCard + index) % data.length]}
+              />
+            ))}
           </div>
-          <button onClick={handlePrev}><MdNavigateBefore/></button>
-          <button onClick={handleNext}><MdNavigateNext/></button>
+          <div className={styles.sliderbtn}>
+            <button className={styles.sliderbtnpre} onClick={handlePrev}>
+              <MdNavigateBefore />
+            </button>
+            <button className={styles.sliderbtnnxt} onClick={handleNext}>
+              <MdNavigateNext />
+            </button>
+          </div>
         </div>
 
         {/* {data.map((d) => (
