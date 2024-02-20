@@ -19,82 +19,39 @@ export default function Home() {
     {
       title: 'Project 1',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      image: '/project1.jpg', // Replace with actual image path
+      image: '/project1.jpg',
       link: 'https://example.com/project1',
     },
     {
       title: 'Project 2',
       description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
+      image: '/project2.jpg',
       link: 'https://example.com/project2',
     },
     {
       title: 'Project 2',
       description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
+      image: '/project2.jpg',
       link: 'https://example.com/project2',
+    },
+    {
+      title: 'Project 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: '/project1.jpg',
+      link: 'https://example.com/project1',
     },
     {
       title: 'Project 2',
       description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
+      image: '/project2.jpg',
       link: 'https://example.com/project2',
     },
     {
       title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.tempor incididunt ut labore et dolore magna aliqua',
+      image: '/project2.jpg',
       link: 'https://example.com/project2',
     },
-    {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
-      link: 'https://example.com/project2',
-    },
-    {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
-      link: 'https://example.com/project2',
-    },
-    {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
-      link: 'https://example.com/project2',
-    },
-    {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
-      link: 'https://example.com/project2',
-    },
-    {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
-      link: 'https://example.com/project2',
-    },
-    {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
-      link: 'https://example.com/project2',
-    },
-    {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
-      link: 'https://example.com/project2',
-    },
-    {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg', // Replace with actual image path
-      link: 'https://example.com/project2',
-    },
-    // Add more projects as needed
   ];
   return (
     <>

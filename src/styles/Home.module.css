@@ -198,7 +198,7 @@
 }
 .about_right>p{
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
   position: relative;
@@ -249,7 +249,7 @@
 }
 .service_paragraph{
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
   position: relative;
@@ -290,7 +290,7 @@
 }
 .offered_paragraph{
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
   position: relative;
@@ -307,7 +307,7 @@
 
 .feedback_items{
   width: 55rem;
-  height: 35rem;
+  height: 33rem;
   min-height: 0.16rem;
   backface-visibility: hidden;
   background: linear-gradient(to bottom, #15044a, #000000);
@@ -333,7 +333,7 @@
 }
 .feedback_desc>p{
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
   position: relative;
@@ -379,11 +379,11 @@
 }
 
 .projectCard {
-  width: calc(33.33% - 2rem); /* Adjust the width and margin as needed */
+  width: calc(33.33% - 2rem);
   margin: 1rem;
   padding: 2rem;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid #6d6d6d;
   border-radius: 0.5rem;
 }
 
@@ -395,7 +395,7 @@
 .projectCard>p {
   margin-top: 1rem;
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem
 }
@@ -736,9 +736,8 @@
   max-width: 100%;
 }
 .half_text1>h3{
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   font-weight: 500;
-  font-family: "Montserrat";
   line-height: 1.2;
   margin-bottom: 0.5rem;
   color: #fff;
@@ -946,9 +945,9 @@
 }
 .half_text3>p{
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
-  line-height: 3rem;  /* font-family: "Montserrat"; */
+  line-height: 3rem;
 
 }
 .left_card2{
@@ -1027,7 +1026,7 @@ list-style: none;
 }
 .quick_links>ul>li>a{
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
   display: flex;
@@ -1050,7 +1049,7 @@ list-style: none;
 }
 .social_media_links>ul>li>a{
   color: #a5a5a5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;  display: flex;
   text-decoration: none;
@@ -1190,7 +1189,7 @@ list-style: none;
   .nav_item,.nav_item_dropdown{
     display: block;
     padding: 1.7rem 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: "Montserrat";
     outline: none;
     text-transform: uppercase;
@@ -1206,7 +1205,7 @@ list-style: none;
   }
   .dropdown_menu{
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border-radius: 0px;
     border: none;
     box-shadow: 0 0.2rem 3.0rem 0px rgba(0, 0, 0, 0.2);
@@ -1226,7 +1225,7 @@ list-style: none;
   }
   .dropdown_menu1{
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border-radius: 0px;
     border: none;
     box-shadow: 0 0.2rem 3.0rem 0px rgba(0, 0, 0, 0.2);

@@ -2,6 +2,8 @@ import React from "react";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import image from "../public/ganesha.jpeg";
+
 
 const Projects = ({ projects }) => {
   return (
@@ -22,7 +24,7 @@ const Projects = ({ projects }) => {
             {projects.map((project, index) => (
               <div key={index} className={styles.projectCard}>
                 <Image
-                  src={project.image}
+                  src={image}
                   alt={project.title}
                   width={300}
                   height={200}
