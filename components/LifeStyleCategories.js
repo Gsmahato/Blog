@@ -11,8 +11,8 @@ import image4 from "../public/image4.jpg";
 const LifeStyleCategories = ({ data }) => {
   return (
     <>
-      <div className={styles.category_section}>
-        <div className={styles.container}>
+      {/* <div>
+        <div className={styles.container}> */}
           <div className={styles.headlines}>
             <div className={styles.headlines_name}>
               <h2>Lifestyle Category</h2>
@@ -50,8 +50,8 @@ const LifeStyleCategories = ({ data }) => {
             </div>
             <div className={styles.right_col}></div>
           </div>
-        </div>
-      </div>
+        {/* </div>
+      </div> */}
     </>
   );
 };

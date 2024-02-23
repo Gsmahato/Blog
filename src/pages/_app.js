@@ -4,11 +4,11 @@ import Footer from "../../components/Footer";
 import BlogFooter from "../../components/BlogFooter"
 
 export default function App({ Component, pageProps }) {
-  const { item, data } = pageProps;
-  const blogitem = item.items;
+  // const { item, data } = pageProps;
+  // const blogitem = item.items;
   return (
     <>
-      <Header blogitem={blogitem} data={data} />
+      <Header/>
       <Component {...pageProps} />
       <Footer />
       {/* <BlogFooter/> */}

@@ -10,8 +10,8 @@ import image4 from "../public/image4.jpg";
 const MoreBlog = () => {
   return (
     <>
-      <div className={styles.moreblog_section}>
-        <div className={styles.container}>
+      {/* <div className={styles.moreblog_section}>
+        <div className={styles.container}> */}
           <div className={styles.headlines}>
             <div className={styles.headlines_name}>
               <h2>More Blog Posts</h2>
@@ -92,8 +92,8 @@ const MoreBlog = () => {
             </div>
             <div className={styles.right_col}></div>
           </div>
-        </div>
-      </div>
+        {/* </div>
+      </div> */}
     </>
   );
 };

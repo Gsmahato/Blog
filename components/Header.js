@@ -54,7 +54,7 @@ const Header = ({ blogitem, data }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about">
+                    <Link href="/services">
                       <span>Services</span>
                     </Link>
                   </li>
@@ -75,16 +75,7 @@ const Header = ({ blogitem, data }) => {
                   </li>
                 </ul>
               </nav>
-              {/* <div className={styles.search_content}>
-                <form action="#" className={styles.search_top_form}>
-                  <span className={styles.search_icon_top}>
-                    <i>
-                      <FaSearch />
-                    </i>
-                  </span>
-                  <input type="text" placeholder="Type keyword to search..." />
-                </form>
-              </div> */}
+              
             </div>
           </div>
         </div>

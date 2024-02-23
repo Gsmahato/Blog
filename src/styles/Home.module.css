@@ -79,10 +79,12 @@
 }
 
 /* <---------------------------------------------------------------------------------------> */
-
+.blog_container_search{
+  display: flex;
+  align-items: center;
+}
 .search_content{
  flex: 0 0 25%;
- max-width: 25%;
  position: relative;
  width: 100%;
  min-height: 0.1rem;
@@ -1116,13 +1118,13 @@ list-style: none;
   .social_media>i>svg{
     font-size: 1.8rem;
   }
-  .search_content{
+  /* .search_content{
    flex: 0 0 25%;
    max-width: 25%;
    position: relative;
    width: 100%;
    min-height: 0.1rem;
-  }
+  } */
   .search_top_form>input{
     width: 12rem;
     min-width: 12rem;

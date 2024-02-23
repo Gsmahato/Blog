@@ -18,8 +18,8 @@ export default function SliderSection({imagedata}) {
   };
   return (
     <>
-      <section className={styles.site_section}>
-        <div className={styles.container}>
+      {/* <section className={styles.site_section}>
+        <div className={styles.container}> */}
           <div className={styles.site_row}>
             <div className={styles.site_col}>
               {SliderData.map((imagedata) => {
@@ -59,8 +59,8 @@ export default function SliderSection({imagedata}) {
 
             <div className={styles.site_dots}></div>
           </div>
-        </div>
-      </section>
+        {/* </div>
+      </section> */}
     </>
   );
 }
