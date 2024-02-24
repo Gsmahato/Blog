@@ -388,6 +388,12 @@
   border: 1px solid #6d6d6d;
   border-radius: 0.5rem;
 }
+.projectCard>img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.16rem;
+}
 
 .projectCard>h3 {
   margin-top: 1rem;
@@ -408,6 +414,55 @@
   text-decoration: none;
   color: #3498db;
   font-weight: bold;
+}
+/* ----------------------------------------- */
+.featuredProject {
+  margin: 4rem 0;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projectCards {
+  width: calc(50% - 2rem);
+  margin: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 1px solid #6d6d6d;
+  border-radius: 0.5rem;
+}
+.projectCards>a>img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.16rem;
+}
+
+.projectCards>a>h3 {
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.projectCards>a>p {
+  margin-top: 1rem;
+  color: #a5a5a5;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem
+}
+
+.projectCards>a {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+.post_meta2{
+  margin-top: 1.5rem;
 }
 /* ****************************** */
 /* navbar section */
@@ -859,17 +914,15 @@
   border-radius: 0.4rem;
   text-transform: uppercase;
   color: #fff;
-  margin-right: 1rem;
-  font-family: "Montserrat";
+  margin-right: 1.5rem;
 }
 .post_date2{
-  color: #000;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   margin-right: 0.1rem;
   margin-bottom: 3rem;
-  font-family: "Montserrat";
 }
 
 /* ****************************** */

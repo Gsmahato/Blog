@@ -13,19 +13,19 @@ const LifeStyleCategories = ({ data }) => {
     <>
       {/* <div>
         <div className={styles.container}> */}
-          <div className={styles.headlines}>
-            <div className={styles.headlines_name}>
-              <h2>Lifestyle Category</h2>
-            </div>
-          </div>
-          <div className={styles.blog_enteries}>
-            <div className={styles.left_col}>
-              <div className={styles.left_row}>
+      <div className={styles.headlines}>
+        <div className={styles.headlines_name}>
+          <h2>Lifestyle Category</h2>
+        </div>
+      </div>
+      <div className={styles.blog_enteries}>
+        <div className={styles.left_col}>
+          {/* <div className={styles.left_row}>
                 {data.blogs.map((blog) => (
                   <div className={styles.left_card} key={blog._id}>
                     <Link href={`/blog/${blog._id}`}>
                       <Image
-                        src={`https://photos.google.com/u/3/photo${blog.featured_image}`}
+                        src={image1}
                         width={350}
                         height={234}
                         alt=""
@@ -46,11 +46,44 @@ const LifeStyleCategories = ({ data }) => {
                     </Link>
                   </div>
                 ))}
-              </div>
+              </div> */}
+          <div className={styles.featuredProject}>
+            <div className={styles.projectContainer}>
+              {data.blogs.map((blog) => (
+                <div key={blog._id} className={styles.projectCards}>
+                  <Link href={`/blog/${blog._id}`}>
+                    <Image
+                      src={image1}
+                      alt={blog.title}
+                      width={300}
+                      height={200}
+                    />
+                    <div className={styles.post_meta2}>
+                      <span className={styles.post_category2}>
+                        {blog.category}
+                      </span>
+                      <span className={styles.post_date2}>
+                        {blog.createdAt} {blog._id}
+                      </span>
+                    </div>
+                    <h3>{blog.title}</h3>
+                    <p>{blog.description}</p>
+                    {/* <a
+                    href={blog.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </a> */}
+                  </Link>
+                </div>
+              ))}
             </div>
-            <div className={styles.right_col}></div>
           </div>
-        {/* </div>
+        </div>
+        <div className={styles.right_col}></div>
+      </div>
+      {/* </div>
       </div> */}
     </>
   );

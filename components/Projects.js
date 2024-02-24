@@ -2,8 +2,7 @@ import React from "react";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import image from "../public/ganesha.jpeg";
-
+import image from "../public/image2.jpg";
 
 const Projects = ({ projects }) => {
   return (
