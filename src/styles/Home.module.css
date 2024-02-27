@@ -1003,7 +1003,6 @@
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
-
 }
 .left_card2{
   margin-left: auto;
@@ -1234,13 +1233,8 @@ list-style: none;
   }
   .about_row{
     display: block;
-    /* align-items: center;
-    justify-content: space-between; */
   }
-  /* .about_left,.about_right{
-    flex: 1;
-    box-sizing: border-box;
-  } */
+
   .about_left,.about_right{
     padding: 0 0 0 0;
     align-items: center;
@@ -1282,6 +1276,7 @@ list-style: none;
     position: relative;
     margin-bottom: 4rem;
     justify-content: center;
+    text-align: center;
   }
   .about_right_btn{
     display: flex;
@@ -1564,6 +1559,13 @@ list-style: none;
     padding: 0 2rem;
     border-top: none;
     max-height: 100%;
+  }
+  .half_text3>p{
+    color: #a5a5a5;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: center;
   }
   .half_text4>h2{
     color: #fff;
