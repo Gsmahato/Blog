@@ -138,6 +138,8 @@
   text-transform: uppercase;
   color: #c09816;
   justify-content: start;
+  text-align: center;
+  align-items: center;
 }
 .site_logo{
   display: flex;
@@ -1201,10 +1203,18 @@ list-style: none;
     color: #b9bee8;
   }
   .logo_row{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+  .site_logo1{
+    display: flex;
+    margin: 0;
+    text-transform: uppercase;
+    color: #c09816;
+    justify-content: start;
+    text-align: center;
   }
   .site_logo{
     display: flex;
@@ -1245,8 +1255,8 @@ list-style: none;
     display: flex;
     text-transform: uppercase;
     margin-bottom: 4rem;
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
     color: #fff;
     justify-content: center;
   }
@@ -1254,12 +1264,13 @@ list-style: none;
     display: flex;
     text-transform: uppercase;
     margin-bottom: 4rem;
-    font-weight: 600;
-    font-size: 3.6rem;
+    font-weight: 500;
+    font-size: 3.2rem;
     line-height: 4rem;
     margin-top: 0;
     color: #fff;
     justify-content: center;
+    text-align: center;
   }
   .about_right>p{
     display: flex;
