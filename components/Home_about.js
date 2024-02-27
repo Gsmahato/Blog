@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
-import image from "../public/R.PNG";
+import image from "../public/R.png";
 import Link from "next/link";
 
 const Homeabout = () => {
