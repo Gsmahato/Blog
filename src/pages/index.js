@@ -17,40 +17,44 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const featuredProjects = [
     {
-      title: 'Project 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      image: '/project1.jpg',
-      link: 'https://example.com/project1',
+      title: "Project 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "/project1.jpg",
+      link: "https://example.com/project1",
     },
     {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg',
-      link: 'https://example.com/project2',
+      title: "Project 2",
+      description:
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/project2.jpg",
+      link: "https://example.com/project2",
     },
     {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg',
-      link: 'https://example.com/project2',
+      title: "Project 2",
+      description:
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/project2.jpg",
+      link: "https://example.com/project2",
     },
     {
-      title: 'Project 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      image: '/project1.jpg',
-      link: 'https://example.com/project1',
+      title: "Project 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "/project1.jpg",
+      link: "https://example.com/project1",
     },
     {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: '/project2.jpg',
-      link: 'https://example.com/project2',
+      title: "Project 2",
+      description:
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/project2.jpg",
+      link: "https://example.com/project2",
     },
     {
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.tempor incididunt ut labore et dolore magna aliqua',
-      image: '/project2.jpg',
-      link: 'https://example.com/project2',
+      title: "Project 2",
+      description:
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.tempor incididunt ut labore et dolore magna aliqua",
+      image: "/project2.jpg",
+      link: "https://example.com/project2",
     },
   ];
   return (
@@ -61,11 +65,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header1/>
-      <Homeabout/>
-      <Services/>
-      <Projects projects={featuredProjects}/>
-      <Feedback/>
+      <Header1 />
+      <Homeabout />
+      <Services />
+      <Projects projects={featuredProjects} />
+      <Feedback />
       <CardSection />
       {/* <SliderSection /> */}
       {/* <LifeStyleCategories data={data} /> */}
@@ -74,18 +78,17 @@ export default function Home() {
   );
 }
 
+// export async function getServerSideProps() {
+//   const res = await fetch(
+//     `https://blog-backend-sigma-eight.vercel.app/api/v1/blog/all-blog`
+//   );
+//   const data = await res.json();
 
-export async function getServerSideProps() {
-  const res = await fetch(
-    `https://blog-backend-sigma-eight.vercel.app/api/v1/blog/all-blog`
-  );
-  const data = await res.json();
-
-  const nav = await fetch(
-    `https://blog-backend-sigma-eight.vercel.app/api/v1/navitem/get-navitem`
-  );
-  const item = await nav.json();
-  return {
-    props: { data, item },
-  };
-}
+//   const nav = await fetch(
+//     `https://blog-backend-sigma-eight.vercel.app/api/v1/navitem/get-navitem`
+//   );
+//   const item = await nav.json();
+//   return {
+//     props: { data, item }
+//   };
+// }
