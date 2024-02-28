@@ -7,10 +7,16 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
+
 const Header = () => {
-  const [showNavbar , setShowNavbar] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
+
   const toggleNavbar = () => {
     setShowNavbar(!showNavbar);
+  };
+
+  const handleNavbarItemClick = () => {
+    setShowNavbar(false);
   };
 
   return (
@@ -20,63 +26,63 @@ const Header = () => {
           <div className={styles.container}>
             <div className={styles.content_row}>
               <div className={styles.res_mob}>
-              <div className={styles.social_content}>
-                <Link href="/">
-                  <span className={styles.social_media}>
-                    <i>
-                      <FaFacebookF />
-                    </i>
+                <div className={styles.social_content}>
+                  <Link href="/">
+                    <span className={styles.social_media}>
+                      <i>
+                        <FaFacebookF />
+                      </i>
+                    </span>
+                  </Link>
+                  <Link href="/">
+                    <span className={styles.social_media}>
+                      <i>
+                        <FaInstagram />
+                      </i>
+                    </span>
+                  </Link>
+                  <Link href="/">
+                    <span className={styles.social_media}>
+                      <i>
+                        <FaLinkedinIn />
+                      </i>
+                    </span>
+                  </Link>
+                </div>
+                <div className={styles.Menu_icon}>
+                  <span onClick={toggleNavbar}>
+                    <FiMenu />
                   </span>
-                </Link>
-                <Link href="/">
-                  <span className={styles.social_media}>
-                    <i>
-                      <FaInstagram />
-                    </i>
-                  </span>
-                </Link>
-                <Link href="/">
-                  <span className={styles.social_media}>
-                    <i>
-                      <FaLinkedinIn />
-                    </i>
-                  </span>
-                </Link>
-              </div>
-              <div className={styles.Menu_icon}>
-                <span onClick={toggleNavbar}>
-                  <FiMenu />
-                </span>
-              </div>
+                </div>
               </div>
               <nav className={`${styles.resNavbar} ${showNavbar ? styles.show : ''}`}>
                 <ul className={styles.main_nav}>
-                  <li className={styles.main_list}>
+                  <li className={styles.main_list} onClick={handleNavbarItemClick}>
                     <Link href="/">
                       <span className={styles.main_nav_item}>Home</span>
                     </Link>
                   </li>
-                  <li className={styles.main_list}>
+                  <li className={styles.main_list} onClick={handleNavbarItemClick}>
                     <Link href="/about">
                       <span className={styles.main_nav_item}>About</span>
                     </Link>
                   </li>
-                  <li className={styles.main_list}>
+                  <li className={styles.main_list} onClick={handleNavbarItemClick}>
                     <Link href="/services">
                       <span className={styles.main_nav_item}>Services</span>
                     </Link>
                   </li>
-                  <li className={styles.main_list}>
+                  <li className={styles.main_list} onClick={handleNavbarItemClick}>
                     <Link href="/contact">
                       <span className={styles.main_nav_item}>Contact</span>
                     </Link>
                   </li>
-                  <li className={styles.main_list}>
+                  <li className={styles.main_list} onClick={handleNavbarItemClick}>
                     <Link href="/blog">
                       <span className={styles.main_nav_item}>Blog</span>
                     </Link>
                   </li>
-                  <li className={styles.main_list}>
+                  <li className={styles.main_list} onClick={handleNavbarItemClick}>
                     <Link href="/puresource">
                       <span className={styles.main_nav_item}>PU Resources</span>
                     </Link>
@@ -87,8 +93,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-     
     </>
   );
 };
