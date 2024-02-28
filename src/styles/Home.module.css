@@ -147,7 +147,7 @@
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 500;
-  font-size: 9rem;
+  font-size: 8rem;
   align-items: center;
 }
 /* <---------------------------------------------------------------------------------------> */
@@ -1162,6 +1162,7 @@ list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .Menu_icon{
     width: 80%;
