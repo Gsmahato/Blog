@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 const Header = () => {
+  const [showNavbar , setShowNavbar] = useState(false);
 
   return (
     <>
@@ -15,6 +16,7 @@ const Header = () => {
         <div className={styles.top_header}>
           <div className={styles.container}>
             <div className={styles.content_row}>
+              <div className={styles.res_mob}>
               <div className={styles.social_content}>
                 <Link href="/">
                   <span className={styles.social_media}>
@@ -43,7 +45,7 @@ const Header = () => {
                   <FiMenu />
                 </span>
               </div>
-
+              </div>
               <nav>
                 <ul className={styles.main_nav}>
                   <li className={styles.main_list}>
@@ -78,40 +80,6 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
-            </div>
-            <div className={styles.mob_navbar}>
-              <ul className={styles.main_nav_mob}>
-                <li className={styles.main_list}>
-                  <Link href="/">
-                    <span className={styles.main_nav_item}>Home</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about">
-                    <span>About</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services">
-                    <span>Services</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact">
-                    <span>Contact</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog">
-                    <span>Blog</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/puresource">
-                    <span>PU Resources</span>
-                  </Link>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

@@ -1132,9 +1132,6 @@ list-style: none;
 .Menu_icon{
   display: none;
 }
-.mob_navbar{
-  display: none;
-}
 
 
 /* ****************************** */
@@ -1158,47 +1155,51 @@ list-style: none;
     padding-left: 1.5rem;
     margin: 0;
   }
-  .mob_navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
   .Menu_icon{
-    width: 80%;
     display: flex;
-    justify-content: end;
-    margin-right: 1.5rem;
   }
   .Menu_icon>span>svg{
     width: 2rem;
     height: 2rem;
     color: #fff;
   }
-  .main_nav{
+  .res_mob{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .main_nav{
     display: none;
   }
 
   .main_list{
     text-decoration: none;
-  }
-  .main_nav_mob{
+  } */
+  .content_row{
     display: block;
-    height: 100%;
-    list-style: none;
-    margin: 0 0 0 0;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    justify-content: space-between;
   }
-  .main_nav_mob>li>a{
+  .main_nav{
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+    padding: 5rem 0 0 0;
+  }
+  .main_list{
+    text-decoration: none;
+  }
+  .main_nav>li>a{
     color: #3498db;
     text-decoration: none;
     transition: .3s all ease;
     font-size: 1.8rem;
   }
-  .main_nav_mob>li>a>span{
-    display: flex;
-    padding: 2rem;
-  }
-  .main_nav_mob>li>a:hover{
+  .main_nav>li>a:hover{
     opacity: 1;
     color: #b9bee8;
   }
