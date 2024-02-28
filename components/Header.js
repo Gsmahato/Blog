@@ -9,6 +9,9 @@ import {
 import { FiMenu } from "react-icons/fi";
 const Header = () => {
   const [showNavbar , setShowNavbar] = useState(false);
+  const toggleNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
 
   return (
     <>
@@ -41,41 +44,41 @@ const Header = () => {
                 </Link>
               </div>
               <div className={styles.Menu_icon}>
-                <span>
+                <span onClick={toggleNavbar}>
                   <FiMenu />
                 </span>
               </div>
               </div>
-              <nav>
+              <nav className={`${styles.resNavbar} ${showNavbar ? styles.show : ''}`}>
                 <ul className={styles.main_nav}>
                   <li className={styles.main_list}>
                     <Link href="/">
                       <span className={styles.main_nav_item}>Home</span>
                     </Link>
                   </li>
-                  <li>
+                  <li className={styles.main_list}>
                     <Link href="/about">
-                      <span>About</span>
+                      <span className={styles.main_nav_item}>About</span>
                     </Link>
                   </li>
-                  <li>
+                  <li className={styles.main_list}>
                     <Link href="/services">
-                      <span>Services</span>
+                      <span className={styles.main_nav_item}>Services</span>
                     </Link>
                   </li>
-                  <li>
+                  <li className={styles.main_list}>
                     <Link href="/contact">
-                      <span>Contact</span>
+                      <span className={styles.main_nav_item}>Contact</span>
                     </Link>
                   </li>
-                  <li>
+                  <li className={styles.main_list}>
                     <Link href="/blog">
-                      <span>Blog</span>
+                      <span className={styles.main_nav_item}>Blog</span>
                     </Link>
                   </li>
-                  <li>
+                  <li className={styles.main_list}>
                     <Link href="/puresource">
-                      <span>PU Resources</span>
+                      <span className={styles.main_nav_item}>PU Resources</span>
                     </Link>
                   </li>
                 </ul>

@@ -1182,6 +1182,17 @@ list-style: none;
     margin-right: -1.5rem;
     justify-content: space-between;
   }
+  .resNavbar{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .show{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
   .main_nav{
     display: grid;
     max-width: 100%;
@@ -1192,6 +1203,7 @@ list-style: none;
   }
   .main_list{
     text-decoration: none;
+    text-align: center;
   }
   .main_nav>li>a{
     color: #3498db;
@@ -1227,6 +1239,7 @@ list-style: none;
     font-size: 2.8rem;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .about_container{
     display: block;
