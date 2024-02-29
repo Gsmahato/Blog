@@ -126,10 +126,7 @@
 /* ************************************* */
 /* logo section */
 .logo_row{
-  /* display: flex; */
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+text-align: center;
 }
 
 .site_logo1{
@@ -140,6 +137,7 @@
   justify-content: start;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 .site_logo{
   display: flex;
@@ -150,6 +148,7 @@
   font-size: 8rem;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 /* <---------------------------------------------------------------------------------------> */
 
