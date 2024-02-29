@@ -126,7 +126,7 @@
 /* ************************************* */
 /* logo section */
 .logo_row{
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -149,6 +149,7 @@
   font-weight: 500;
   font-size: 8rem;
   align-items: center;
+  text-align: center;
 }
 /* <---------------------------------------------------------------------------------------> */
 
