@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Gurusharan</title>
+        <title>gurusharan</title>
         <meta name="description" content="gurusharan.com.np" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import styles from "@/styles/Home.module.css";
 
 const contact = () => {
   return (
-    <div>contact</div>
-  )
-}
+    <>
+      <div className={styles.service_container}>
+        <div className={styles.container}> contact</div>
+      </div>
+    </>
+  );
+};
 
-export default contact
+export default contact;

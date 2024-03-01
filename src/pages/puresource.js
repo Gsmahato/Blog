@@ -1,8 +1,17 @@
 import React from 'react'
+import styles from '@/styles/Home.module.css'
+ 
 
 const puresource = () => {
   return (
-    <div>puresource</div>
+    <>
+    <div className={styles.service_container}>
+      <div className={styles.container}>
+        PU Resources
+      </div>
+      </div>
+
+    </>
   )
 }
 

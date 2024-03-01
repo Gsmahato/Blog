@@ -398,6 +398,7 @@ text-align: center;
 .projectCard>h3 {
   margin-top: 1rem;
   color: #fff;
+  text-align: center;
 }
 
 .projectCard>p {
@@ -405,7 +406,9 @@ text-align: center;
   color: #a5a5a5;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 3rem
+  line-height: 3rem;
+  text-align: center;
+
 }
 
 .projectCard>a {
@@ -414,6 +417,7 @@ text-align: center;
   text-decoration: none;
   color: #3498db;
   font-weight: bold;
+  text-align: center;
 }
 /* ----------------------------------------- */
 .featuredProject {
@@ -444,6 +448,7 @@ text-align: center;
   margin-top: 1rem;
   color: #fff;
   text-decoration: none;
+  text-align: center;
 }
 
 .projectCards>a>p {
@@ -451,7 +456,9 @@ text-align: center;
   color: #a5a5a5;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 3rem
+  line-height: 3rem;
+  text-align: center;
+
 }
 
 .projectCards>a {
@@ -460,6 +467,7 @@ text-align: center;
   text-decoration: none;
   color: #3498db;
   font-weight: bold;
+  text-align: center;
 }
 .post_meta2{
   margin-top: 1.5rem;

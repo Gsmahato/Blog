@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import styles from '@/styles/Home.module.css'
 
 const services = () => {
   return (
-    <div>services</div>
-  )
-}
+    <div className={styles.service_container}>
+      <div className={styles.container}>
+        Services
+      </div>
+    </div>
+  );
+};
 
-export default services
+export default services;
